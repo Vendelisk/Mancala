@@ -1,0 +1,19 @@
+PRISM: graphics renderer (graphical pipeline)
+GWT (Glass Windowing Toolkit): manage Windows, Timers, Surfaces and Event Queues
+		^ connects JFX platform to OS
+Quantum Toolkit: ties Prism and GWT together for JFX
+WebView: supports HTML5, CSS, JavaScript, etc. in JFX
+Media Engine: supports the playback of video and audio content (only MP3, WAV, AIFF & FLV)
+		^ javafx.scene.media
+
+
+STAGE: contains all the objects of a JavaFX application
+--types: Decorated, Undecorated, Transparent, Unified, Utility
+		^ must call show() to display contents
+
+SCENE: represents the physical contents of a JavaFX application
+
+NODES (of scene graph): tree-like data structure (hierarchical) representing the contents of a scene
+--contains: Geometrical objects, UI Controls, Containers & Media elements
+--types: Group (renders all children), Region (UI ctrls), WebView (manages WebEng)
+
